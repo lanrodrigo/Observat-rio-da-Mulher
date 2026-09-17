@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciativas Municipais | Observatório da Mulher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Readex+Pro:wght@300;400;500;700&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="initiatives-page" data-page="iniciativas">
+    <div data-component="header"></div>
+
+    <main class="initiatives-main">
+        <section class="initiatives-intro">
+            <h1>Iniciativas Municipais</h1>
+            <p><strong>A importância dos dados</strong> Lorem ipsum dolor sit amet, consectetur aelit. Sed mi nisl, finibus quis erat nec, auctor mattis tellus. Nulla lobortis, diam at convallis consectetur, ex nulla efficitur odio, quis sollicitudin ipsum massa in leo.</p>
+        </section>
+
+        <section class="initiative-timeline" aria-label="Linhas do tempo das Iniciativas de Gênero">
+            <div class="timeline-legend">
+                <span class="legend-brazil">Brasil</span>
+                <span class="legend-state">Estado do Rio de Janeiro</span>
+                <span class="legend-city">Município de Niterói</span>
+            </div>
+            <h2>Século XXI</h2>
+            <img class="timeline-scroll" src="assets/timeline-scroll.svg" alt="">
+            <h2>Séculos XIX e XX</h2>
+            <img class="timeline-history" src="assets/timeline-history.svg" alt="">
+        </section>
+
+        <section class="initiative-list" aria-label="Iniciativas Municipais">
+            <div class="category-filter-wrap">
+                <button class="category-filter" type="button" aria-expanded="false" aria-controls="initiative-filter-menu">
+                    <span>Todas as Categorias</span>
+                    <img src="assets/filter-chevron.svg" alt="">
+                </button>
+                <div class="initiative-filter-menu" id="initiative-filter-menu" hidden>
+                    <fieldset>
+                        <legend>Todos Eixos Temáticos</legend>
+                        <label><input type="checkbox" value="all-axis" checked><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Todos Eixos Temáticos</label>
+                        <label><input type="checkbox" value="Saúde"><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Saúde</label>
+                        <label><input type="checkbox" value="Educação"><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Educação</label>
+                        <label><input type="checkbox" value="Economia"><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Economia</label>
+                        <label><input type="checkbox" value="Segurança"><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Segurança</label>
+                        <label><input type="checkbox" value="Demografia"><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Demografia</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Todos os impactos</legend>
+                        <label><input type="checkbox" value="all-impact" checked><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Todos os impactos</label>
+                        <label><input type="checkbox" value="Impacto Direto"><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Impacto Direto</label>
+                        <label><input type="checkbox" value="Impacto Indireto"><span class="filter-check"><img src="assets/filter-checkbox.svg" alt=""></span>Impacto Indireto</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="initiative-grid"></div>
+        </section>
+    </main>
+
+    <dialog class="initiative-modal" id="bolsa-creche-modal" aria-labelledby="bolsa-creche-title">
+        <div class="modal-title">
+            <img class="modal-mark" src="assets/modal-initiative-icon.svg" alt="">
+            <div>
+                <h2 id="bolsa-creche-title">Bolsa Creche Municipal</h2>
+                <p>EDUCAÇÃO</p>
+            </div>
+        </div>
+        <div class="modal-columns">
+            <div class="modal-column">
+                <section class="modal-panel definition-panel">
+                    <h3>O que é?</h3>
+                    <p id="modal-definition">x nulla efficitur odio, quis sollicitudin ipsum massa in leo. Lorem ipsum dolor sit amet, consectetur aelit. Sed mi nisl, finibus quis erat nec, auctor mattis tellus. Nulla lobortis, diam at convallis consectetur, ex nulla efficitur odio, quis sollicitudin ipsum massa in leo. Lorem ipsum</p>
+                </section>
+                <div class="modal-fact"><b>Orçamento estimado</b><strong id="modal-budget">R$ 2.400.000,00</strong><img class="fact-icon" src="assets/modal-budget-icon.svg" alt=""></div>
+                <div class="modal-fact"><b>Público prioritário</b><strong id="modal-audience">Mulheres Trabalhadoras</strong><img class="fact-icon" src="assets/modal-audience-icon.svg" alt=""></div>
+                <div class="modal-fact"><b>Situação</b><strong id="modal-status"></strong><img class="fact-icon" src="assets/modal-status-icon.svg" alt=""></div>
+                <section class="modal-panel impact-panel">
+                    <img class="impact-icon" src="assets/modal-impact-icon.svg" alt="">
+                    <h3>Impacto</h3>
+                    <p id="modal-impact"></p>
+                    <span id="modal-impact-type"></span>
+                </section>
+            </div>
+            <div class="modal-column">
+                <div class="modal-fact"><b>Órgão responsável</b><strong id="modal-organization">FME / SME</strong><img class="fact-icon fact-icon-small" src="assets/modal-organization-icon.svg" alt=""></div>
+                <div class="modal-fact"><b>Ano de início</b><strong id="modal-year">2021</strong><img class="fact-icon fact-icon-small" src="assets/modal-calendar-icon.svg" alt=""></div>
+                <section class="modal-panel zone-panel">
+                    <h3><img class="location-icon" src="assets/modal-location-icon.svg" alt="">Zona de atendimento</h3>
+                    <div class="zone-placeholder" aria-hidden="true"></div>
+                    <p>Esta iniciativa atende em todo território do município</p>
+                </section>
+            </div>
+        </div>
+        <button class="modal-update" type="button">Informar dados de atualização</button>
+        <button class="modal-close" type="button" aria-label="Fechar janela">×</button>
+    </dialog>
+
+    <div data-component="footer"></div>
+    <script src="components-loader.js"></script>
+    <script>
+        const initiativeModal = document.getElementById('bolsa-creche-modal');
+        const closeModal = initiativeModal.querySelector('.modal-close');
+        const initiativeGrid = document.querySelector('.initiative-grid');
+        const filterToggle = document.querySelector('.category-filter');
+        const filterMenu = document.getElementById('initiative-filter-menu');
+        const filterInputs = filterMenu.querySelectorAll('input');
+        const modalTitle = document.getElementById('bolsa-creche-title');
+        const modalCategory = document.querySelector('.modal-title p');
+        const modalOrganization = document.getElementById('modal-organization');
+        const modalYear = document.getElementById('modal-year');
+        const modalDefinition = document.getElementById('modal-definition');
+        const modalBudget = document.getElementById('modal-budget');
+        const modalAudience = document.getElementById('modal-audience');
+        const modalImpact = document.getElementById('modal-impact');
+        const modalImpactType = document.getElementById('modal-impact-type');
+        const tagClasses = { Educação: 'education', Economia: 'economy', Demografia: 'demography', Saúde: 'health', Segurança: 'security' };
+        const selectedFilters = [new Set(), new Set()];
+        let cards = [];
+
+        const renderCards = (initiatives) => {
+            initiativeGrid.innerHTML = initiatives.map((initiative) => `
+                <article class="initiative-card initiative-card-button" tabindex="0" role="button" aria-haspopup="dialog" data-name="${initiative.nome}">
+                    <h3>${initiative.nome}</h3>
+                    <p><b>Orgão:</b> ${initiative.orgao}<br><b>Ano:</b> ${initiative.ano}</p>
+                    <div><span class="tag ${tagClasses[initiative.eixo] || ''}">${initiative.eixo}</span><span class="tag ${initiative.impacto === 'Impacto Direto' ? 'direct' : 'indirect'}">${initiative.impacto}</span></div>
+                </article>
+            `).join('');
+            cards = [...initiativeGrid.querySelectorAll('.initiative-card')];
+            cards.forEach((card, index) => {
+                card.dataset.axis = initiatives[index].eixo;
+                card.dataset.impact = initiatives[index].impacto;
+                card.addEventListener('click', () => openInitiativeModal(initiatives[index]));
+                card.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        openInitiativeModal(initiatives[index]);
+                    }
+                });
+            });
+        };
+
+        const openInitiativeModal = (initiative) => {
+            const details = initiative.detalhes || {};
+            modalTitle.textContent = initiative.nome;
+            modalCategory.textContent = initiative.eixo.toUpperCase();
+            modalOrganization.textContent = initiative.orgao;
+            modalYear.textContent = initiative.ano;
+            modalDefinition.textContent = details.definicao || '';
+            modalBudget.textContent = details.orcamento || '';
+            modalAudience.textContent = details.publico || '';
+            modalImpact.textContent = details.impactoTexto || '';
+            modalImpactType.textContent = details.impactoTipo || '';
+            initiativeModal.showModal();
+        };
+
+        const filterCards = () => {
+            const axes = [...filterMenu.querySelectorAll('fieldset')[0].querySelectorAll('input:checked')]
+                .filter((input) => input.value !== 'all-axis').map((input) => input.value);
+            const impacts = [...filterMenu.querySelectorAll('fieldset')[1].querySelectorAll('input:checked')]
+                .filter((input) => input.value !== 'all-impact').map((input) => input.value);
+            cards.forEach((card) => {
+                card.hidden = !( (axes.length === 0 || axes.includes(card.dataset.axis)) && (impacts.length === 0 || impacts.includes(card.dataset.impact)) );
+            });
+        };
+
+        filterToggle.addEventListener('click', () => {
+            const isOpen = filterToggle.getAttribute('aria-expanded') === 'true';
+            filterToggle.setAttribute('aria-expanded', String(!isOpen));
+            filterMenu.hidden = isOpen;
+        });
+
+        filterInputs.forEach((input) => {
+            const label = input.closest('label');
+            label.addEventListener('mousedown', (event) => {
+                if (event.button !== 0) return;
+                event.preventDefault();
+                const fieldset = input.closest('fieldset');
+                const group = [...fieldset.querySelectorAll('input')];
+                const allInput = group[0];
+                const multiSelect = event.ctrlKey || event.metaKey;
+                const groupIndex = [...filterMenu.querySelectorAll('fieldset')].indexOf(fieldset);
+                const selected = selectedFilters[groupIndex];
+
+                if (input === allInput) {
+                    selected.clear();
+                } else if (multiSelect) {
+                    if (selected.has(input.value)) selected.delete(input.value);
+                    else selected.add(input.value);
+                } else {
+                    if (selected.has(input.value)) {
+                        selected.delete(input.value);
+                    } else {
+                        selected.clear();
+                        selected.add(input.value);
+                    }
+                }
+
+                group.forEach((option, index) => {
+                    option.checked = index === 0 ? selected.size === 0 : selected.has(option.value);
+                });
+                filterCards();
+            });
+
+            label.addEventListener('click', (event) => event.preventDefault());
+
+            input.addEventListener('change', () => {
+                filterCards();
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.category-filter-wrap')) {
+                filterToggle.setAttribute('aria-expanded', 'false');
+                filterMenu.hidden = true;
+            }
+        });
+        closeModal.addEventListener('click', () => initiativeModal.close());
+        initiativeModal.addEventListener('click', (event) => {
+            if (event.target === initiativeModal) initiativeModal.close();
+        });
+        fetch('data/iniciativas.json').then((response) => response.json()).then(renderCards);
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {"nome":"Bolsa Creche Municipal","orgao":"FME/SME","ano":"2021","eixo":"Educação","impacto":"Impacto Indireto","detalhes":{"definicao":"x nulla efficitur odio, quis sollicitudin ipsum massa in leo. Lorem ipsum dolor sit amet, consectetur aelit. Sed mi nisl, finibus quis erat nec, auctor mattis tellus. Nulla lobortis, diam at convallis consectetur, ex nulla efficitur odio, quis sollicitudin ipsum massa in leo. Lorem ipsum","orcamento":"R$ 2.400.000,00","publico":"Mulheres Trabalhadoras","impactoTexto":"Mais de 1.200 crianças beneficiadas.","impactoTipo":"Impacto indireto na vida das mães"}},
+  {"nome":"CEAM - Centro Especializado de Atendimento à Mulher Neuza Santos","orgao":"SMMU","ano":"2014","eixo":"Educação","impacto":"Impacto Indireto"},
+  {"nome":"APP SOS Mulher","orgao":"SMMU","ano":"2025","eixo":"Educação","impacto":"Impacto Indireto"},
+  {"nome":"Patrulha Guardiões Maria da Penha","orgao":"SMMU/SEOP","ano":"2019","eixo":"Educação","impacto":"Impacto Indireto"},
+  {"nome":"Área Lilás em Eventos","orgao":"SMMU/CGE","ano":"2025","eixo":"Economia","impacto":"Impacto Direto"},
+  {"nome":"NUAMs - Núcleos de Atendimento à Mulher","orgao":"SMMU/SMS","ano":"2021","eixo":"Economia","impacto":"Impacto Direto"},
+  {"nome":"Rede Lilás de Enfrentamento à Violência","orgao":"SMMU","ano":"2018","eixo":"Educação","impacto":"Impacto Indireto"},
+  {"nome":"Programa Capacita Niterói Mulher","orgao":"SMMU/SEMEAC","ano":"2022","eixo":"Economia","impacto":"Impacto Direto"},
+  {"nome":"Feira da Mulher Empreendedora","orgao":"SMMU/SEDET","ano":"2021","eixo":"Economia","impacto":"Impacto Direto"},
+  {"nome":"Crédito Rosa","orgao":"SMMU/CODEM","ano":"2023","eixo":"Economia","impacto":"Impacto Direto"},
+  {"nome":"Espaço Empreender","orgao":"SMMU/CODIM","ano":"2023","eixo":"Economia","impacto":"Impacto Direto"},
+  {"nome":"Observatório da Mulher de Niterói","orgao":"SEPLAG/SMMU","ano":"2026","eixo":"Demografia","impacto":"Impacto Indireto"},
+  {"nome":"Licença Lilás","orgao":"SMMU/CEAM","ano":"2025","eixo":"Economia","impacto":"Impacto Direto"},
+  {"nome":"Cartão “Vai Mulher”","orgao":"SMMU/CEAM/EPTC/SEMOBI","ano":"2026","eixo":"Economia","impacto":"Impacto Direto"},
+  {"nome":"Programa Niterói por Elas","orgao":"SMMU/SEPLAG/EPTC","ano":"2025","eixo":"Demografia","impacto":"Impacto Indireto"},
+  {"nome":"Casa Acolher Bárbara Siqueira","orgao":"SMMU","ano":"2026","eixo":"Economia","impacto":"Impacto Direto"}
+]
